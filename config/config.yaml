@@ -1,6 +1,6 @@
 # your domain
 domain: wf168.herokuapp.com
-port: 80                # default 12580
+port:                 # default 12580
 
 # source list file
 source-files:
