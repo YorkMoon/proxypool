@@ -7,75 +7,13 @@
 - type: webfuzz
   options:
     url: https://i.sqeven.me/discuss/detail/100
-- type: webfuzz
-  options:
-    url: https://i.sqeven.me/discuss/detail/102
-- type: webfuzz
-  options:
-    url: https://github.com/umelabs/node.umelabs.dev
-- type: webfuzz
-  options:
-    url: https://github.com/freefq/free
-- type: webfuzz
-  options:
-    url: https://github.com/iwxf/free-v2ray/blob/master/README.md
-- type: webfuzz
-  options:
-    url: https://github.com/hugetiny/awesome-vpn/blob/master/READMECN.md
 
 # clash格式订阅链接
 - type: clash
   options:
     url: https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml
-- type: clash
-  options:
-    url: https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/0304clash.yml
-- type: clash
-  options:
-    url: https://bihai.cf/clash/proxies
-- type: clash
-  options:
-    url: https://upan.tk/clash/proxies
-- type: clash
-  options:
-    url: https://freemby.tk/clash/proxies
-- type: clash
-  options:
-    url: https://proxypoolv2.tk/clash/proxies
-- type: clash
-  options:
-    url: https://proxypoolss.tk/clash/proxies
-- type: clash
-  options:
-    url: https://hm2019721.ml/clash/proxies
-- type: clash
-  options:
-    url: https://6166888.xyz/clash/proxies
-- type: clash
-  options:
-    url: https://sspool.nl/clash/proxies
-- type: clash
-  options:
-    url: https://hello.stgod.com/clash/proxies
-- type: clash
-  options:
-    url: https://proxypool.ednovas.xyz/clash/proxies
 
 # 某个网站抓取
 - type: web-freessrxyz
   options:
     url: https://lightyearapp.life/zh/free-vpn
-  
-# tg频道抓取
-- type: tgchannel
-  options:
-    channel: NetfreexSrV
-    num: 100
-- type: tgchannel
-  options:
-    channel: SSRSUB
-    num: 100
-- type: tgchannel
-  options:
-    channel: FreeSSRNode
-    num: 100
