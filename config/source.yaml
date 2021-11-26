@@ -21,7 +21,7 @@
 - type: subscribe
   options:
     url: https://raw.githubusercontent.com/freefq/free/master/v2
- - type: subscribe
+- type: subscribe
   options:
     url: https://raw.githubusercontent.com/freefq/free/master/ssr
 - type: subscribe
