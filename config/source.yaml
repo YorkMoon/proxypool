@@ -1,3 +1,8 @@
+# 网页模糊抓取
+- type: webfuzz
+  options:
+    url: https://zfjvpn.gitbook.io/123/
+ 
 # 模糊抓取订阅链接
 - type: webfuzzsub
   options:
@@ -13,6 +18,12 @@
     url: https://github.com/wechoice/wechoice.github.io/blob/eb7f35b85fb2c676c16598b258a17e05adb82718/main.html
  
 # 订阅链接
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/freefq/free/master/v2
+ - type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/freefq/free/master/ssr
 - type: subscribe
   options:
     url: https://iwxf.netlify.app/
@@ -41,6 +52,26 @@
   options:
     url: https://v2ray.banyunxiaoxi.ml/
 
+# clash格式订阅链接
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/1126clash.yml
+- type: clash
+  options:
+    url: https://sspool.nl/clash/proxies
+- type: clash
+  options:
+    url: https://hello.stgod.com/clash/proxies
+- type: clash
+  options:
+    url: https://sspool.nl/clash/proxies?type=trojan
+- type: clash
+  options:
+    url: https://free886.herokuapp.com/clash/proxies
+- type: clash
+  options:
+    url: https://proxypool.fly.dev/clash/proxies?type=trojan
+ 
 # tg频道抓取
 - type: tgchannel
   options:
