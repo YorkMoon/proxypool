@@ -12,6 +12,35 @@
   options:
     url: https://github.com/wechoice/wechoice.github.io/blob/eb7f35b85fb2c676c16598b258a17e05adb82718/main.html
  
+# 订阅链接
+- type: subscribe
+  options:
+    url: https://iwxf.netlify.app/
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/UmeLabs/node.umelabs.dev/master/Subscribe/v2ray.md
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/UmeLabs/node.umelabs.dev/master/Subscribe/SSR.md
+- type: subscribe
+  options:
+    url: https://gitea.com/proxypools/sub/raw/branch/main/clash/clashr.yaml
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/satrom/V2SSR/master/SS/Sub.txt
+- type: subscribe
+  options:
+    url: https://jiang.netlify.com/
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/voken100g/AutoSSR/master/stable
+- type: subscribe
+  options:
+    url: https://youlianboshi.netlify.com/
+- type: subscribe
+  options:
+    url: https://v2ray.banyunxiaoxi.ml/
+
 # tg频道抓取
 - type: tgchannel
   options:
