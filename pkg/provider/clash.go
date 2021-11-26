@@ -28,7 +28,7 @@ func (c Clash) Provide() string {
 	c.preFilter()
 
 	var resultBuilder strings.Builder
-	resultBuilder.WriteString("proxies:\n")
+	resultBuilder.WriteString("proxies1:\n")
 	for _, p := range *c.Proxies {
 		if checkClashSupport(p) {
 			resultBuilder.WriteString(p.ToClash() + "\n")
