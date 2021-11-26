@@ -10,9 +10,9 @@
 - type: webfuzzsub
   options:
     url: https://github.com/woytu/notes-vuepress/blob/757206d5c10d112d56a3c789d5a622d4bcfe6375/System/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.md
-- type: webfuzzsub
-  options:
-    url: https://github.com/doudoubinga/ceshi/blob/27cd627f3467bcd88ab4a92f0c44baabc53c7e73/trash/base64-sub
+#- type: webfuzzsub
+#  options:
+#    url: https://github.com/doudoubinga/ceshi/blob/27cd627f3467bcd88ab4a92f0c44baabc53c7e73/trash/base64-sub
 - type: webfuzzsub
   options:
     url: https://github.com/wechoice/wechoice.github.io/blob/eb7f35b85fb2c676c16598b258a17e05adb82718/main.html
@@ -33,9 +33,6 @@
 - type: subscribe
   options:
     url: https://raw.githubusercontent.com/UmeLabs/node.umelabs.dev/master/Subscribe/SSR.md
-- type: subscribe
-  options:
-    url: https://gitea.com/proxypools/sub/raw/branch/main/clash/clashr.yaml
 - type: subscribe
   options:
     url: https://raw.githubusercontent.com/satrom/V2SSR/master/SS/Sub.txt
@@ -61,7 +58,7 @@
     url: https://sspool.nl/clash/proxies
 - type: clash
   options:
-    url: https://hello.stgod.com/clash/proxies
+    url: https://hello.stgod.com/clash/proxies?type=trojan
 - type: clash
   options:
     url: https://sspool.nl/clash/proxies?type=trojan
@@ -152,10 +149,6 @@
 - type: tgchannel
   options:
     channel: v2ray666
-    num: 100
-- type: tgchannel
-  options:
-    channel: ssrList
     num: 100
 - type: tgchannel
   options:
