@@ -28,7 +28,7 @@ func (c Clash) Provide() string {
 	c.preFilter()
 
 	var resultBuilder strings.Builder
-	resultBuilder.WriteString("port: 7890\n socks-port: 7891\n allow-lan: true\n mode: Rule\n log-level: info\n external-controller:\n :9090\n proxies:\n")
+	resultBuilder.WriteString("port: 7890\nsocks-port: 7891\nallow-lan: true\nmode: Rule\nlog-level: info\nexternal-controller: :9090\nproxies:\n")
 	for _, p := range *c.Proxies {
 		if checkClashSupport(p) {
 			resultBuilder.WriteString(p.ToClash() + "\n")
