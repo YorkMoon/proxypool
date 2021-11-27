@@ -104,7 +104,7 @@ $ docker run -d --restart=always \
 
 运行该程序需要具有访问完整互联网的能力。
 配置CF需要在CF中创建workers，粘贴下面代码并修改其中域名domian.herokuapp.com为你自己的。
-
+```code
 addEventListener(
   "fetch",event => {
      let url=new URL(event.request.url);
@@ -115,7 +115,7 @@ addEventListener(
      )
   }
 )
-
+```
 ### 修改配置文件
 
 首先修改 config.yaml 中的必要配置信息。带有默认值的字段均可不填写。完整的配置选项见[配置文件说明](https://github.com/Sansui233/proxypool/wiki/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E)
