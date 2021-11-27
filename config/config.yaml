@@ -13,7 +13,7 @@ source-files:
 
 #====Postgresql database info ====#
 #database_url: "postgres://proxypool:proxypool@postgres-db:5432/proxypool"
-database_url: "postgres://proxypool:proxypool@clair_postgres:5432?sslmode=disable/proxypool"
+database_url: "postgres://murcgkqmefdlco:f4c8e193d0e8a756bcac0cbf3d28162084ee5b3ce195539a8caf385df0455790@ec2-18-213-133-45.compute-1.amazonaws.com:5432/d473uqfch1fq4d"
 
 #==== Interval between each crawling ====#
 crawl-interval: 1440            # v0.5.x default 60 (minutes)
