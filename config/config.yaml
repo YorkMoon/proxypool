@@ -1,5 +1,5 @@
 # your domain
-domain: wf168.herokuapp.com
+domain: w.wf168.workers.dev
 port:                 # default 12580
 
 # source list file
