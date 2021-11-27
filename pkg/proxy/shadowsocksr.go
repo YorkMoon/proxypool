@@ -31,7 +31,6 @@ type ShadowsocksR struct {
 	ProtocolParam string `yaml:"protocol-param,omitempty" json:"protocol-param,omitempty"`
 	Obfs          string `yaml:"obfs" json:"obfs"`
 	ObfsParam     string `yaml:"obfs-param,omitempty" json:"obfs-param,omitempty"`
-	Group         string `yaml:"group,omitempty" json:"group,omitempty"`
 }
 
 func (ssr ShadowsocksR) Identifier() string {
@@ -70,7 +69,7 @@ func (ssr ShadowsocksR) Link() (link string) {
 	query.Add("obfsparam", tool.Base64EncodeString(ssr.ObfsParam, true))
 	query.Add("protoparam", tool.Base64EncodeString(ssr.ProtocolParam, true))
 	//query.Add("remarks", tool.Base64EncodeString(ssr.Name, true))
-	query.Add("group", tool.Base64EncodeString("wf168.herokuapp.com", true))
+	query.Add("group", tool.Base64EncodeString("proxypoolss.herokuapp.com", true))
 	payload = tool.Base64EncodeString(fmt.Sprintf("%s/?%s", payload, query.Encode()), true)
 	return fmt.Sprintf("ssr://%s", payload)
 }
@@ -162,7 +161,6 @@ func ParseSSRLink(link string) (*ShadowsocksR, error) {
 		ProtocolParam: protocolParam,
 		Obfs:          obfs,
 		ObfsParam:     obfsParam,
-		Group:         "",
 	}, nil
 }
 

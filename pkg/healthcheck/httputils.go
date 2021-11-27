@@ -42,7 +42,7 @@ func urlToMetadata(rawURL string) (addr C.Metadata, err error) {
 }
 
 func HTTPGetViaProxy(clashProxy C.Proxy, url string) error {
-	ctx, cancel := context.WithTimeout(context.Background(), defaultURLTestTimeout)
+	ctx, cancel := context.WithTimeout(context.Background(), DelayTimeout)
 	defer cancel()
 
 	addr, err := urlToMetadata(url)
@@ -90,7 +90,7 @@ func HTTPGetViaProxy(clashProxy C.Proxy, url string) error {
 }
 
 func HTTPHeadViaProxy(clashProxy C.Proxy, url string) error {
-	ctx, cancel := context.WithTimeout(context.Background(), defaultURLTestTimeout)
+	ctx, cancel := context.WithTimeout(context.Background(), DelayTimeout)
 	defer cancel()
 
 	addr, err := urlToMetadata(url)
@@ -133,12 +133,15 @@ func HTTPHeadViaProxy(clashProxy C.Proxy, url string) error {
 	if err != nil {
 		return err
 	}
+	if resp.StatusCode >= 400 {
+		return fmt.Errorf("%d %s for proxy %s %s", resp.StatusCode, resp.Status, clashProxy.Name(), clashProxy.Addr())
+	}
 	resp.Body.Close()
 	return nil
 }
 
 func HTTPGetBodyViaProxy(clashProxy C.Proxy, url string) ([]byte, error) {
-	ctx, cancel := context.WithTimeout(context.Background(), defaultURLTestTimeout)
+	ctx, cancel := context.WithTimeout(context.Background(), DelayTimeout)
 	defer cancel()
 
 	addr, err := urlToMetadata(url)
@@ -245,7 +248,8 @@ func HTTPGetBodyViaProxyWithTime(clashProxy C.Proxy, url string, t time.Duration
 	return body, nil
 }
 
-func HTTPGetBodyForSpeedTest(clashProxy C.Proxy, url string, t time.Duration) error {
+// Get body without return to save memory
+func HTTPGetBodyViaProxyWithTimeNoReturn(clashProxy C.Proxy, url string, t time.Duration) error {
 	ctx, cancel := context.WithTimeout(context.Background(), t)
 	defer cancel()
 

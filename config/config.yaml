@@ -9,25 +9,30 @@ source-files:
   # use web file
   # - https://example.com/config/source.yaml
 
-# ======= 可选项，留空使用default值  =======
+# ======= 可选项，留空使用default值  ======= #
 
-# postgresql database info
+#====Postgresql database info ====#
 #database_url: "postgres://proxypool:proxypool@postgres-db:5432/proxypool"
 database_url: "postgres://proxypool:proxypool@clair_postgres:5432?sslmode=disable/proxypool"
-# interval between each crawling
-crawl-interval: 1440      # v0.5.x default 60 (minutes)
-crontime: 1440            # v0.4.x default 60 (minutes). Deprecated in the newest version
 
-# speed test
-speedtest: true      # default false or true. Warning: this will consume large network resources.
-speedtest-interval:   # default 720 (min)
-connection: 10          # default 5. The number of speed test connections simultaneously
-timeout: 5             # default 10 (seconds).
-## active proxy speed test
-active-interval: 720     # default 60 (min)
-active-frequency:     # default 100 (requests per interval)
-active-max-number:    # default 100. If more than this number of active proxies, the extra will be deprecated by speed
+#==== Interval between each crawling ====#
+crawl-interval: 1440            # v0.5.x default 60 (minutes)
+#crontime:                  # v0.4.x default 60 (minutes). Deprecated in the newest version
+healthcheck-timeout:        # default 5 (seconds)
+healthcheck-connection:     # default 500. The number of health check connections simultaneously
 
-# cloudflare api
+#==== Speed test ====#
+speedtest: true            # default false or true Warning: this will consume large network resources.
+speedtest-interval:         # default 720 (min)
+speed-timeout: 6             # default 10 (seconds).
+speed-connection: 10          # v0.7.2 default 5. The number of speed test connections simultaneously
+#connection                 # v0.7.1 and beblow
+
+#==== Active proxy speed test ====#
+active-interval: 720           # default 60 (min)
+active-frequency:           # default 100 (requests per interval)
+active-max-number: 200         # default 100. If more than this number of active proxies, the extra will be deprecated by speed
+
+#==== Cloudflare api ====#
 cf_email: ""
 cf_key: ""
