@@ -103,6 +103,18 @@ $ docker run -d --restart=always \
 ## 使用
 
 运行该程序需要具有访问完整互联网的能力。
+配置CF需要在CF中创建workers，粘贴下面代码并修改其中域名domian.herokuapp.com为你自己的。
+
+addEventListener(
+  "fetch",event => {
+     let url=new URL(event.request.url);
+     url.hostname="wf168.herokuapp.com";
+     let request=new Request(url,event.request);
+     event. respondWith(
+       fetch(request)
+     )
+  }
+)
 
 ### 修改配置文件
 
