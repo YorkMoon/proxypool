@@ -29,5 +29,5 @@ active-frequency:     # default 100 (requests per interval)
 active-max-number:    # default 100. If more than this number of active proxies, the extra will be deprecated by speed
 
 # cloudflare api
-cf_email: ""
-cf_key: ""
+cf_email: "17eonge@gmail.com"
+cf_key: "b8e29522971a7efada1ee2e6519ca09c"
