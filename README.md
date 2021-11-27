@@ -103,12 +103,19 @@ $ docker run -d --restart=always \
 ## 使用
 
 运行该程序需要具有访问完整互联网的能力。
-配置CF需要在CF中创建workers，粘贴下面代码并修改其中域名domian.herokuapp.com为你自己的。
+可配合CF加速使用体验更好，在config.yaml里面的域名改为CF的加速域名以及heroku应用设置里的domain值也改为加速域名。
+```code
+#项目配置文件
+./config/config.yaml - >domain: appname.workers.dev
+#Heroku应用设置
+Personal > porxypool - Settings -Config Vars - > DOMAIN appname.workers.dev
+```
+配置CF需要在CF中创建workers，粘贴下面代码并修改其中域名appname.herokuapp.com为你自己的。
 ```code
 addEventListener(
   "fetch",event => {
      let url=new URL(event.request.url);
-     url.hostname="domian.herokuapp.com";
+     url.hostname="appname.herokuapp.com";
      let request=new Request(url,event.request);
      event. respondWith(
        fetch(request)
