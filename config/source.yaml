@@ -6,7 +6,10 @@
 # 模糊抓取订阅链接
 - type: webfuzzsub
   options:
-    url: https://github.com/JACKUSR2089/v2ray-subscribed   
+    url: https://github.com/JACKUSR2089/v2ray-subscribed/subscribed
+- type: webfuzzsub
+  options:
+    url: https://github.com/JACKUSR2089/v2ray-subscribed
 - type: webfuzzsub
   options:
     url: https://github.com/doudoubinga/ceshi/blob/27cd627f3467bcd88ab4a92f0c44baabc53c7e73/trash/base64-sub
@@ -15,9 +18,6 @@
 - type: subscribe
   options:
     url: https://raw.githubusercontent.com/freefq/free/master/v2
-- type: subscribe
-  options:
-    url: https://raw.githubusercontent.com/freefq/free/master/ssr
 - type: subscribe
   options:
     url: https://iwxf.netlify.app/
@@ -36,136 +36,35 @@
 - type: subscribe
   options:
     url: https://youlianboshi.netlify.com/
-- type: subscribe
-  options:
-    url: https://v2ray.banyunxiaoxi.ml/
 
 # clash格式订阅链接
 - type: clash
   options:
-    url: https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/1126clash.yml
+    url: https://raw.githubusercontent.com/JACKUSR2089/v2ray-subscribed/master/subscribed/2022-3-15.yaml
 - type: clash
   options:
-    url: https://sspool.nl/clash/proxies
+    url: https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/0318clash.yml
 - type: clash
   options:
-    url: https://hello.stgod.com/clash/proxies?type=trojan
+    url: https://proxy.ednovas.xyz/clash/proxies?type=ssr,vmess,trojan
 - type: clash
   options:
-    url: https://sspool.nl/clash/proxies?type=trojan
+    url: http://www.fuckgfw.tk/clash/proxies?type=ssr,vmess,trojan
 - type: clash
   options:
-    url: https://free886.herokuapp.com/clash/proxies
+    url: https://fq.lonxin.net/clash/proxies?type=ssr,vmess,trojan
 - type: clash
   options:
-    url: https://raw.githubusercontent.com/clashconfig/online/main/Dark_Clash.yml
- 
-# tg频道抓取
-- type: tgchannel
+    url: https://free886.herokuapp.com/clash/proxies?type=ssr,vmess,trojan
+- type: clash
   options:
-    channel: SSRSUB
-    num: 100
-- type: tgchannel
+    url: https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml
+    - type: clash
   options:
-    channel: FreeSSRNode
-    num: 100
-- type: tgchannel
+    url: https://sspool.herokuapp.com/clash/proxies?type=ssr,vmess,trojan
+    - type: clash
   options:
-    channel: ssrtool
-    num: 100
-- type: tgchannel
+    url: https://free.zdl.im/clash/proxies?type=ssr,vmess,trojan
+    - type: clash
   options:
-    channel: freeshadowsock
-    num: 200
-- type: tgchannel
-  options:
-    channel: jiedianfenxiang
-    num: 100
-- type: tgchannel
-  options:
-    channel: fanqiang666
-    num: 100
-- type: tgchannel
-  options:
-    channel: ssrtool_crack
-    num: 100
-- type: tgchannel
-  options:
-    channel: gongyijichangfenxiang
-    num: 200
-- type: tgchannel
-  options:
-    channel: VPNFolder
-    num: 100
-- type: tgchannel
-  options:
-    channel: ssrkn
-    num: 100
-- type: tgchannel
-  options:
-    channel: abchz
-    num: 100
-- type: tgchannel
-  options:
-    channel: yg251153
-    num: 100
-- type: tgchannel
-  options:
-    channel: woyaofq
-    num: 200
-- type: tgchannel
-  options:
-    channel: wwx_com
-    num: 100
-- type: tgchannel
-  options:
-    channel: freessr4k
-    num: 100
-- type: tgchannel
-  options:
-    channel: ultrafreevpn
-    num: 100
-- type: tgchannel
-  options:
-    channel: VSshit
-    num: 100
-- type: tgchannel
-  options:
-    channel: InternetSSR
-    num: 200
-- type: tgchannel
-  options:
-    channel: mtproxy666
-    num: 100
-- type: tgchannel
-  options:
-    channel: v2ray666
-    num: 100
-- type: tgchannel
-  options:
-    channel: aifenxiang2020
-    num: 100
-- type: tgchannel
-  options:
-    channel: sharecentre
-    num: 100
-- type: tgchannel
-  options:
-    channel: ssrlists
-    num: 200
-- type: tgchannel
-  options:
-    channel: QuantXSSR
-    num: 100
-- type: tgchannel
-  options:
-    channel: vmessr_mirror
-    num: 100
-- type: tgchannel
-  options:
-    channel: FreeVPN8
-    num: 100
-- type: tgchannel
-  options:
-    channel: baipiaojiedian
-    num: 200
+    url: https://upan.tk/clash/proxies?type=ssr,vmess,trojan
