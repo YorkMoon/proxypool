@@ -59,12 +59,12 @@
 - type: clash
   options:
     url: https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml
-    - type: clash
+- type: clash
   options:
     url: https://sspool.herokuapp.com/clash/proxies?type=ssr,vmess,trojan
-    - type: clash
+- type: clash
   options:
     url: https://free.zdl.im/clash/proxies?type=ssr,vmess,trojan
-    - type: clash
+- type: clash
   options:
     url: https://upan.tk/clash/proxies?type=ssr,vmess,trojan
