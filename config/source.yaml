@@ -20,6 +20,18 @@
     url: https://raw.githubusercontent.com/freefq/free/master/v2
 - type: subscribe
   options:
+    url: https://raw.githubusercontent.com/lion12776/kejilion/main/2ray
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/freebaipiao/freebaipiao/main/GfwserveV2ray.txt
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/proxy.md
+- type: subscribe
+  options:
+    url: https://gitee.com/xihuancaoni/dotscustuser/raw/master/README.md
+- type: subscribe
+  options:
     url: https://iwxf.netlify.app/
 - type: subscribe
   options:
@@ -44,6 +56,9 @@
 - type: clash
   options:
     url: https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/0318clash.yml
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/lion12776/kejilion/main/clash
 - type: clash
   options:
     url: https://proxy.ednovas.xyz/clash/proxies?type=ssr,vmess,trojan
