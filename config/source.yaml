@@ -55,7 +55,10 @@
     url: https://raw.githubusercontent.com/JACKUSR2089/v2ray-subscribed/master/subscribed/2022-3-15.yaml
 - type: clash
   options:
-    url: https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/0318clash.yml
+    url: https://raw.githubusercontent.com/skywolf627/ProxiesActions/main/subscribe/vmess.txt
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/0325clash.yml
 - type: clash
   options:
     url: https://raw.githubusercontent.com/lion12776/kejilion/main/clash
