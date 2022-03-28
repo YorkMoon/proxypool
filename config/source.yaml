@@ -58,7 +58,7 @@
     url: https://raw.githubusercontent.com/skywolf627/ProxiesActions/main/subscribe/vmess.txt
 - type: clash
   options:
-    url: https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/0325clash.yml
+    url: https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/0328clash.yml
 - type: clash
   options:
     url: https://raw.githubusercontent.com/lion12776/kejilion/main/clash
