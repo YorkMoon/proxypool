@@ -6,9 +6,6 @@
 # 模糊抓取订阅链接
 - type: webfuzzsub
   options:
-    url: https://github.com/JACKUSR2089/v2ray-subscribed/subscribed
-- type: webfuzzsub
-  options:
     url: https://github.com/JACKUSR2089/v2ray-subscribed
 - type: webfuzzsub
   options:
@@ -18,12 +15,6 @@
 - type: subscribe
   options:
     url: https://raw.githubusercontent.com/freefq/free/master/v2
-- type: subscribe
-  options:
-    url: https://raw.githubusercontent.com/lion12776/kejilion/main/2ray
-- type: subscribe
-  options:
-    url: https://raw.githubusercontent.com/freebaipiao/freebaipiao/main/GfwserveV2ray.txt
 - type: subscribe
   options:
     url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/proxy.md
