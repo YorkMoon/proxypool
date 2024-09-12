@@ -1,34 +1,151 @@
-# 模糊抓取订阅链接
-- type: webfuzzsub
-  options:
-    url: https://raw.githubusercontent.com/du5/free/master/sub.list
-
-# 订阅链接
-- type: subscribe
-  options:
-    url: https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray
-
 # 网页模糊抓取
 - type: webfuzz
   options:
-    url: https://merlinblog.xyz/wiki/freess.html
-
-# tg频道抓取
-- type: tgchannel
+    url: https://zfjvpn.gitbook.io/123/
+ 
+# 模糊抓取订阅链接
+- type: webfuzzsub
   options:
-    channel: ssrList
-    num: 200
-
-# 翻墙党论坛抓取
-- type: web-fanqiangdang
+    url: https://github.com/JACKUSR2089/v2ray-subscribed
+- type: webfuzzsub
   options:
-    url: https://fanqiangdang.com/forum-48-1.html
+    url: https://github.com/doudoubinga/ceshi/blob/27cd627f3467bcd88ab4a92f0c44baabc53c7e73/trash/base64-sub
+ 
+# 订阅链接
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/freefq/free/master/v2
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/proxy.md
+- type: subscribe
+  options:
+    url: https://gitee.com/xihuancaoni/dotscustuser/raw/master/README.md
+- type: subscribe
+  options:
+    url: https://iwxf.netlify.app/
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/UmeLabs/node.umelabs.dev/master/Subscribe/v2ray.md
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/UmeLabs/node.umelabs.dev/master/Subscribe/SSR.md
+- type: subscribe
+  options:
+    url: https://jiang.netlify.com/
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/voken100g/AutoSSR/master/stable
+- type: subscribe
+  options:
+    url: https://youlianboshi.netlify.com/
+- type: subscribe
+  options:
+    url: https://proxy.ednovas.xyz/vmess/sub
+- type: subscribe
+  options:
+    url: https://fq.lonxin.net/vmess/sub
+- type: subscribe
+  options:
+    url: https://free886.herokuapp.com/vmess/sub
+- type: subscribe
+  options:
+    url: https://sspool.herokuapp.com/vmess/sub
+- type: subscribe
+  options:
+    url: https://free.zdl.im/vmess/sub
+- type: subscribe
+  options:
+    url: https://upan.tk/vmess/sub
+- type: subscribe
+  options:
+    url: https://proxy.ednovas.xyz/sip002/sub
+- type: subscribe
+  options:
+    url: https://fq.lonxin.net/sip002/sub
+- type: subscribe
+  options:
+    url: https://free886.herokuapp.com/sip002/sub
+- type: subscribe
+  options:
+    url: https://sspool.herokuapp.com/sip002/sub
+- type: subscribe
+  options:
+    url: https://free.zdl.im/sip002/sub
+- type: subscribe
+  options:
+    url: https://upan.tk/sip002/sub
+- type: subscribe
+  options:
+    url: https://proxy.ednovas.xyz/trojan/sub
+- type: subscribe
+  options:
+    url: https://fq.lonxin.net/trojan/sub
+- type: subscribe
+  options:
+    url: https://free886.herokuapp.com/trojan/sub
+- type: subscribe
+  options:
+    url: https://sspool.herokuapp.com/trojan/sub
+- type: subscribe
+  options:
+    url: https://free.zdl.im/trojan/sub
+- type: subscribe
+  options:
+    url: https://upan.tk/trojan/sub
+- type: subscribe
+  options:
+    url: https://proxy.ednovas.xyz/ssr/sub
+- type: subscribe
+  options:
+    url: https://fq.lonxin.net/ssr/sub
+- type: subscribe
+  options:
+    url: https://free886.herokuapp.com/ssr/sub
+- type: subscribe
+  options:
+    url: https://sspool.herokuapp.com/ssr/sub
+- type: subscribe
+  options:
+    url: https://free.zdl.im/ssr/sub
+- type: subscribe
+  options:
+    url: https://upan.tk/ssr/sub
 
 # clash格式订阅链接
 - type: clash
   options:
-    url: https://raw.githubusercontent.com/du5/free/master/file/0909/Clash.yaml
-
-# 某个网站抓取
-- type: web-freessrxyz
+    url: https://raw.githubusercontent.com/JACKUSR2089/v2ray-subscribed/master/subscribed/2022-3-15.yaml
+- type: clash
   options:
+    url: https://raw.githubusercontent.com/skywolf627/ProxiesActions/main/subscribe/vmess.txt
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/0328clash.yml
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/lion12776/kejilion/main/clash
+- type: clash
+  options:
+    url: https://proxy.ednovas.xyz/clash/proxies?type=ssr,vmess,trojan
+- type: clash
+  options:
+    url: http://www.fuckgfw.tk/clash/proxies?type=ssr,vmess,trojan
+- type: clash
+  options:
+    url: https://fq.lonxin.net/clash/proxies?type=ssr,vmess,trojan
+- type: clash
+  options:
+    url: https://free886.herokuapp.com/clash/proxies?type=ssr,vmess,trojan
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml
+- type: clash
+  options:
+    url: https://sspool.herokuapp.com/clash/proxies?type=ssr,vmess,trojan
+- type: clash
+  options:
+    url: https://free.zdl.im/clash/proxies?type=ssr,vmess,trojan
+- type: clash
+  options:
+    url: https://upan.tk/clash/proxies?type=ssr,vmess,trojan

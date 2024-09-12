@@ -9,6 +9,6 @@ var (
 	VmessProxiesCount   = 0
 	TrojanProxiesCount  = 0
 	UsefullProxiesCount = 0
-	LastCrawlTime       = "程序正在启动，请于3分钟后刷新页面"
-	IsSpeedTest         = "未开启"
+	LastCrawlTime       = "程序正在启动，请于5分钟后刷新页面"
+	IsSpeedTest         = "开启中"
 )

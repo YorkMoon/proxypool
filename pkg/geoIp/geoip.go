@@ -8,7 +8,7 @@ import (
 	"net"
 	"os"
 
-	bingeoip "github.com/Sansui233/proxypool/internal/bindata/geoip"
+	bingeoip "github.com/selastmomo/proxypool/internal/bindata/geoip"
 	"github.com/oschwald/geoip2-golang"
 )
 
@@ -22,13 +22,11 @@ func InitGeoIpDB() error {
 		err = bingeoip.RestoreAsset("", "assets/flags.json")
 		if err != nil {
 			panic(err)
-			return err
 		}
 		err = bingeoip.RestoreAsset("", "assets/GeoLite2-City.mmdb")
 		if err != nil {
 			log.Println("文件不存在，请自行下载 Geoip2 City库，并保存在", geodb)
 			panic(err)
-			return err
 		}
 		GeoIpDB = NewGeoIP("assets/GeoLite2-City.mmdb", "assets/flags.json")
 	}
@@ -96,14 +94,11 @@ func (g GeoIP) Find(ipORdomain string) (ip, country string, err error) {
 		return
 	}
 	countryIsoCode := record.Country.IsoCode
-	if countryIsoCode == "" {
-		country = fmt.Sprintf("🏁ZZ")
-	}
 	emoji, found := g.emojiMap[countryIsoCode]
 	if found {
 		country = fmt.Sprintf("%v%v", emoji, countryIsoCode)
 	} else {
-		country = fmt.Sprintf("🏁ZZ")
+		country = "🏁ZZ"
 	}
-	return
+	return ip, country, err
 }

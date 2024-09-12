@@ -1,10 +1,10 @@
 package provider
 
 import (
-	"github.com/Sansui233/proxypool/pkg/tool"
+	"github.com/selastmomo/proxypool/pkg/tool"
 	"strings"
 
-	"github.com/Sansui233/proxypool/pkg/proxy"
+	"github.com/selastmomo/proxypool/pkg/proxy"
 )
 
 // Clash provides functions that make proxies support clash client
@@ -28,7 +28,7 @@ func (c Clash) Provide() string {
 	c.preFilter()
 
 	var resultBuilder strings.Builder
-	resultBuilder.WriteString("proxies:\n")
+	resultBuilder.WriteString("port: 7890\nsocks-port: 7891\nallow-lan: true\nmode: Rule\nlog-level: info\nexternal-controller: :9090\nproxies:\n")
 	for _, p := range *c.Proxies {
 		if checkClashSupport(p) {
 			resultBuilder.WriteString(p.ToClash() + "\n")

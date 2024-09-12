@@ -5,14 +5,14 @@
 <h5 align="center">自动抓取tg频道、订阅地址、公开互联网上的ss、ssr、vmess、trojan节点信息，聚合去重测试可用性后提供节点列表</h5>
 
 <p align="center">
-  <a href="https://github.com/Sansui233/proxypool/actions">
-    <img src="https://img.shields.io/github/workflow/status/Sansui233/proxypool/Go?style=flat-square" alt="Github Actions">
+  <a href="https://github.com/selastmomo/proxypool/actions">
+    <img src="https://img.shields.io/github/workflow/status/sansui233/proxypool/Go?style=flat-square" alt="Github Actions">
   </a>
-  <a href="https://goreportcard.com/report/github.com/Sansui233/proxypool">
-    <img src="https://goreportcard.com/badge/github.com/Sansui233/proxypool?style=flat-square">
+  <a href="https://goreportcard.com/report/github.com/selastmomo/proxypool">
+    <img src="https://goreportcard.com/badge/github.com/selastmomo/proxypool?style=flat-square">
   </a>
-  <a href="https://github.com/Sansui233/proxypool/releases">
-    <img src="https://img.shields.io/github/release/Sansui233/proxypool/all.svg?style=flat-square">
+  <a href="https://github.com/selastmomo/proxypool/releases">
+    <img src="https://img.shields.io/github/release/selastmomo/proxypool/all.svg?style=flat-square">
   </a>
 </p>
 
@@ -58,7 +58,7 @@
 需要安装Golang
 
 ```shell
-$ go get -u -v github.com/Sansui233/proxypool
+$ go get -u -v github.com/selastmomo/proxypool
 ```
 
 运行
@@ -75,14 +75,14 @@ $ make
 
 ### 4. 下载预编译程序
 
-从这里下载预编译好的程序 [release](https://github.com/Sansui233/proxypool/releases)。
+从这里下载预编译好的程序 [release](https://github.com/selastmomo/proxypool/releases)。
 
 ### 5. 使用docker
 
 运行下面的命令下载 proxypool 镜像
 
 ```shell
-$ docker pull ghcr.io/sansui233/proxypool:latest
+$ docker pull ghcr.io/selastmomo/proxypool:latest
 ```
 
 然后运行 proxypool 即可
@@ -92,7 +92,7 @@ $ docker run -d --restart=always \
   --name=proxypool \
   -p 12580:12580 \
   -v /path/to/config:/proxypool-src/config \
-  ghcr.io/sansui233/proxypool \
+  ghcr.io/selastmomo/proxypool \
   -c config/config.yaml
 ```
 
@@ -104,6 +104,26 @@ $ docker run -d --restart=always \
 
 运行该程序需要具有访问完整互联网的能力。
 
+可配合CF加速使用体验更好，在config.yaml里面的域名改为CF的加速域名以及heroku应用设置里的domain值也改为加速域名。
+```code
+#项目配置文件
+./config/config.yaml - >domain: appname.workers.dev
+#Heroku应用设置
+Personal > porxypool - Settings -Config Vars - > DOMAIN appname.workers.dev
+```
+配置CF需要在CF中创建workers，粘贴下面代码并修改其中域名appname.herokuapp.com为你自己的。
+```code
+addEventListener(
+  "fetch",event => {
+     let url=new URL(event.request.url);
+     url.hostname="appname.herokuapp.com";
+     let request=new Request(url,event.request);
+     event. respondWith(
+       fetch(request)
+     )
+  }
+)
+```
 ### 修改配置文件
 
 首先修改 config.yaml 中的必要配置信息。带有默认值的字段均可不填写。完整的配置选项见[配置文件说明](https://github.com/Sansui233/proxypool/wiki/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E)

@@ -1,5 +1,5 @@
 # your domain
-domain: example.com
+domain: w.wf168.workers.dev
 port:                 # default 12580
 
 # source list file
@@ -9,25 +9,30 @@ source-files:
   # use web file
   # - https://example.com/config/source.yaml
 
-# ======= 可选项，留空使用default值  =======
+# ======= 可选项，留空使用default值  ======= #
 
-# postgresql database info
-database_url: ""
+#====Postgresql database info ====#
+#database_url: "postgres://proxypool:proxypool@postgres-db:5432/proxypool"
+database_url: "postgres://murcgkqmefdlco:f4c8e193d0e8a756bcac0cbf3d28162084ee5b3ce195539a8caf385df0455790@ec2-18-213-133-45.compute-1.amazonaws.com:5432/d473uqfch1fq4d"
 
-# interval between each crawling
-crawl-interval:       # v0.5.x default 60 (minutes)
-crontime:             # v0.4.x default 60 (minutes). Deprecated in the newest version
+#==== Interval between each crawling ====#
+crawl-interval: 90            # v0.5.x default 60 (minutes)
+#crontime:                  # v0.4.x default 60 (minutes). Deprecated in the newest version
+healthcheck-timeout: 6       # default 5 (seconds)
+healthcheck-connection:     # default 500. The number of health check connections simultaneously
 
-# speed test
-speedtest: false      # default false. Warning: this will consume large network resources.
-speedtest-interval:   # default 720 (min)
-connection:           # default 5. The number of speed test connections simultaneously
-timeout:              # default 10 (seconds).
-## active proxy speed test
-active-interval:      # default 60 (min)
-active-frequency:     # default 100 (requests per interval)
-active-max-number:    # default 100. If more than this number of active proxies, the extra will be deprecated by speed
+#==== Speed test ====#
+speedtest: true            # default false or true Warning: this will consume large network resources.
+speedtest-interval:         # default 720 (min)
+speed-timeout:              # default 10 (seconds).
+speed-connection: 10          # v0.7.2 default 5. The number of speed test connections simultaneously
+#connection                 # v0.7.1 and beblow
 
-# cloudflare api
+#==== Active proxy speed test ====#
+active-interval: 60           # default 60 (min)
+active-frequency:           # default 100 (requests per interval)
+active-max-number: 400         # default 100. If more than this number of active proxies, the extra will be deprecated by speed
+
+#==== Cloudflare api ====#
 cf_email: ""
 cf_key: ""
